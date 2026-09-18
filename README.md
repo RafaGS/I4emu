@@ -10,7 +10,7 @@ This project is a lightweight, resource-constrained emulator of the classic Inte
 
 ### Key Features
 
-- **Optimized Intel 4004 Core:** Complete emulation of the 4-bit CPU architecture, including the Accumulator, Carry flag, 12-bit Program Counter (PC), 3-level call stack, and 16 4-bit index registers ($R_0$–$R_{15}$) configurable as register pairs ($P_0$ – $P_7$).
+- **Optimized Intel 4004 Core:** Complete emulation of the 4-bit CPU architecture, including the Accumulator, Carry flag, 12-bit Program Counter (PC), 3-level call stack, and 16 4-bit index registers ($R_0$ – $R_{15}$) configurable as register pairs ($P_0$ – $P_7$).
 
 - **Zero-Heap Memory Management:** Tailored for the 2 KB SRAM limit of the ATmega328P. Avoids dynamic memory allocation (`String` objects) by using C-strings and a reusable global buffer (`shared_buf`), maintaining a static 512-byte ROM space.
 
@@ -80,7 +80,7 @@ Este proyecto es un emulador ligero del sistema de desarrollo clásico Intel MCS
 
 ### Características Principales
 
-- **Núcleo Intel 4004 Optimizado:** Emulación de la arquitectura de 4 bits, incluyendo Acumulador, flag de Acarreo (Carry), Contador de Programa (PC) de 12 bits, pila de llamadas de 3 niveles y 16 registros de índice de 4 bits ($R_0$–$R_{15}$) configurables por pares ($P_0$ – $P_7$).
+- **Núcleo Intel 4004 Optimizado:** Emulación de la arquitectura de 4 bits, incluyendo Acumulador, flag de Acarreo (Carry), Contador de Programa (PC) de 12 bits, pila de llamadas de 3 niveles y 16 registros de índice de 4 bits ($R_0$ – $R_{15}$) configurables por pares ($P_0$ – $P_7$).
 
 - **Gestión de Memoria Sin Heap:** Diseñado para ajustarse a los 2 KB de SRAM del ATmega328P. Elimina la asignación dinámica de memoria (`String`) empleando cadenas tipo C y un búfer global reutilizable (`shared_buf`), manteniendo un espacio estático de ROM de 512 bytes.
 
