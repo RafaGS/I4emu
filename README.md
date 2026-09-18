@@ -10,7 +10,7 @@ This project is a lightweight, resource-constrained emulator of the classic Inte
 
 ### Key Features
 
-- **Optimized Intel 4004 Core:** Complete emulation of the 4-bit CPU architecture, including the Accumulator, Carry flag, 12-bit Program Counter (PC), 3-level call stack, and 16 4-bit index registers ($R_0$–$R_{15}$) configurable as register pairs ($P_0$–$P_7$).
+- **Optimized Intel 4004 Core:** Complete emulation of the 4-bit CPU architecture, including the Accumulator, Carry flag, 12-bit Program Counter (PC), 3-level call stack, and 16 4-bit index registers ($R_0$–$R_{15}$) configurable as register pairs ($P_0$ – $P_7$).
 
 - **Zero-Heap Memory Management:** Tailored for the 2 KB SRAM limit of the ATmega328P. Avoids dynamic memory allocation (`String` objects) by using C-strings and a reusable global buffer (`shared_buf`), maintaining a static 512-byte ROM space.
 
@@ -30,9 +30,7 @@ This project is a lightweight, resource-constrained emulator of the classic Inte
 
 ### Toolchain & Supporting Utilities
 
-- **`asm2ihex.py`:** A Python assembler that translates Intel 4004 assembly source code directly into Intel HEX format. Features support for registers ($R_0$–$R_{15}$), register pairs ($P_0$–$P_7$), and automatic comment stripping (`;`, `//`, `#`).
-
-- **`code2ihex.py`:** A utility for converting raw opcode byte lists into Intel HEX streams with EOF record generation (`:00000001FF`).
+- **`code2ihex.py`:** A Python assembler that translates Intel 4004 assembly source code directly into Intel HEX format. Features support for registers ($R_0$ – $R_{15}$), register pairs ($P_0$ – $P_7$), and automatic comment stripping (`;`, `//`).
 
 ### Quick Start Guide
 
@@ -51,7 +49,7 @@ This project is a lightweight, resource-constrained emulator of the classic Inte
    Bash
    
    ```
-   python asm2ihex.py program.asm
+   python code2ihex.py program.asm
    ```
 
 4. **Load & Run:**
@@ -82,7 +80,7 @@ Este proyecto es un emulador ligero del sistema de desarrollo clásico Intel MCS
 
 ### Características Principales
 
-- **Núcleo Intel 4004 Optimizado:** Emulación de la arquitectura de 4 bits, incluyendo Acumulador, flag de Acarreo (Carry), Contador de Programa (PC) de 12 bits, pila de llamadas de 3 niveles y 16 registros de índice de 4 bits ($R_0$–$R_{15}$) configurables por pares ($P_0$–$P_7$).
+- **Núcleo Intel 4004 Optimizado:** Emulación de la arquitectura de 4 bits, incluyendo Acumulador, flag de Acarreo (Carry), Contador de Programa (PC) de 12 bits, pila de llamadas de 3 niveles y 16 registros de índice de 4 bits ($R_0$–$R_{15}$) configurables por pares ($P_0$ – $P_7$).
 
 - **Gestión de Memoria Sin Heap:** Diseñado para ajustarse a los 2 KB de SRAM del ATmega328P. Elimina la asignación dinámica de memoria (`String`) empleando cadenas tipo C y un búfer global reutilizable (`shared_buf`), manteniendo un espacio estático de ROM de 512 bytes.
 
@@ -102,9 +100,7 @@ Este proyecto es un emulador ligero del sistema de desarrollo clásico Intel MCS
 
 ### Cadena de Herramientas (Toolchain)
 
-- **`asm2ihex.py`:** Ensamblador en Python que traduce código fuente ensamblador del Intel 4004 directamente a formato Intel HEX. Soporta registros ($R_0$–$R_{15}$), pares ($P_0$–$P_7$) y eliminación automática de comentarios (`;`, `//`, `#`).
-
-- **`code2ihex.py`:** Utilidad para empaquetar listas de bytes de opcodes en tramas Intel HEX con generación de registro EOF (`:00000001FF`).
+- **`code2ihex.py`:** Ensamblador en Python que traduce código fuente ensamblador del Intel 4004 directamente a formato Intel HEX. Soporta registros ($R_0$ – $R_{15}$), pares ($P_0$ – $P_7$) y eliminación automática de comentarios (`;`, `//`).
 
 ### Guía Rápida de Uso
 
@@ -140,7 +136,7 @@ Este proyecto es un emulador ligero del sistema de desarrollo clásico Intel MCS
 
 - **Entorno de desarrollo:** Arduino IDE o CLI (estándar C++11 o superior).
 
-- **Herramientas:** Python 3.x para ejecutar `asm2ihex.py` y `code2ihex.py`.
+- **Herramientas:** Python 3.x para ejecutar `code2ihex.py`.
 
 ### Licencia
 
