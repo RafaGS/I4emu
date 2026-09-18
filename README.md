@@ -66,7 +66,7 @@ This project is a lightweight, resource-constrained emulator of the classic Inte
 
 - **Software/Environment:** Arduino IDE or CLI (C++11 or higher).
 
-- **Toolchain:** Python 3.x for `asm2ihex.py` and `code2ihex.py`.
+- **Toolchain:** Python 3.x for `code2ihex.py`.
 
 ### License
 
