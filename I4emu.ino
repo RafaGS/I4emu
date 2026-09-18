@@ -1,5 +1,5 @@
 /*
- * I4emu: Intellec 4 Emulator (RAM Optimized)
+ * I4emu: Intellec 4 Emulator
  *
  * Created by RafaGS
  * more info at https://minibots.wordpress.com

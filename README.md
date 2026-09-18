@@ -1,4 +1,4 @@
-# I4Emu - Intel 4004 / Intellec 4 AVR Emulator
+# I4Emu - Intel Intellec 4 AVR Emulator
 
 **[English Version](#english-version) | [Versión en Español](#versi%25C3%25B3n-en-espa%25C3%25B1ol)**
 
